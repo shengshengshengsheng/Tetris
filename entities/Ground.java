@@ -4,7 +4,7 @@ import java.awt.Graphics;
 
 import myEnum.ShapeAction;
 import util.ConstantVarable;
-
+//the ground class used to restore the things down
 /*
  * 障碍物类，用于存放落下的图形形成的障碍物。
  * 必须要有两个方法：drawMe和accept方法。
