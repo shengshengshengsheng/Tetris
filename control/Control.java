@@ -7,7 +7,7 @@ import entities.ShapeFactory;
 import listener.ShapeListener;
 import myEnum.ShapeAction;
 import view.GamePanel;
-
+//controller,used to control the event
 /*
  * 控制器，2个用途：
  * 1，用于处理用户按键事件的处理
