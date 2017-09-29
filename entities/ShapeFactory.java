@@ -2,7 +2,7 @@ package entities;
 import java.util.Random;
 import listener.ShapeListener;
 import util.ConstantVarable;
-// to make the shape
+
 /*
  * 图形工厂，用于生产出各种图形的类
  * 故一定需要有一个getShape方法
@@ -16,7 +16,7 @@ public class ShapeFactory {
 	{
 		System.out.println("这是产生图形的方法");
 		Shape shape = new Shape();
-		int shapeKind = (int)(new Random().nextInt(ConstantVarable.BODIES.length));
+		int shapeKind = (int)(new Random(12).nextInt(ConstantVarable.BODIES.length));
 		shape.setBody(ConstantVarable.BODIES[shapeKind]);
 		shape.setStatus(0);
 		shape.addshapeListener(shapeListener);
