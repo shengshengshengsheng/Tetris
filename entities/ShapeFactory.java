@@ -14,11 +14,13 @@ public class ShapeFactory {
 	
 	public Shape getShape(ShapeListener shapeListener)
 	{
+	
 		System.out.println("这是产生图形的方法");
 		Shape shape = new Shape();
 		int shapeKind = (int)(new Random(12).nextInt(ConstantVarable.BODIES.length));
+		System.out.println(shapeKind);
 		shape.setBody(ConstantVarable.BODIES[shapeKind]);
-		shape.setStatus(0);
+		shape.setStatus(1+(int)(Math.random()*12));
 		shape.addshapeListener(shapeListener);
 		return shape;
 	}
